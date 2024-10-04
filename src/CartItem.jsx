@@ -9,12 +9,25 @@ const CartItem = ({ onContinueShopping }) => {
 
   // Calculate total amount for all products in the cart
   const calculateTotalAmount = () => {
- 
+    // Initialize total cost
+totalCost = 0
+
+// Iterate through each item in the cart array
+for each item in cartArray:
+    // Calculate the total cost for the current item
+    itemTotal = item.quantity * item.cost
+    
+    // Add the item total to the total cost
+    totalCost += itemTotal
+
+// Return the total cost of all items in the cart
+return totalCost
+
   };
 
-  const handleContinueShopping = (e) => {
-   
-  };
+  const handleCheckoutShopping = (e) => {
+  alert('Functionality to be added for future reference');
+};
 
 
 
