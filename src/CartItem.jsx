@@ -12,7 +12,7 @@ const CartItem = ({ onContinueShopping }) => {
     let totalCost = 0;
         cart.forEach((item) => {
         const itemTotal = item.quantity * item.cost.replace('$', ''); // Remove $ and calculate
-        otalCost += itemTotal;
+        totalCost += itemTotal;
     });
     return totalCost;
   };
@@ -57,7 +57,7 @@ return (
       </div>
       <div style={{ marginTop: '20px', color: 'black' }} className='total_cart_amount'></div>
       <div className="continue_shopping_btn">
-        <button className="get-started-button" onClick={(e) => handleContinueShopping(e)}>Continue Shopping</button>
+        <button className="get-started-button" onClick={onContinueShopping}>Continue Shopping</button>
         <br />
         <button className="get-started-button1">Checkout</button>
       </div>
