@@ -1,13 +1,11 @@
 // store.js
 import { configureStore } from '@reduxjs/toolkit';
-import cartReducer from './CartSlice'; // Adjust the path as necessary
-
-// Configure the store
+import cartReducer from './CartSlice'; 
 const store = configureStore({
   reducer: {
-    cart: cartReducer, // Associating the cart reducer with the 'cart' key
-    // Add other reducers here as needed
+    cart: cartReducer, 
+    
   },
 });
-// Export the configured store
+
 export default store;
