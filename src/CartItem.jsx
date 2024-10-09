@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeItem, updateQuantity, addItem } from './redux/actions'; // Ensure all actions are defined properly
+// import { removeItem, updateQuantity, addItem } from './redux/actions'; // Ensure all actions are defined properly
 import './CartItem.css';
 
 const CartItem = ({ onContinueShopping }) => {

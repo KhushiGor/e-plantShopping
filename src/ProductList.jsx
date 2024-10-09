@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addItem } from './redux/actions'; // Ensure you have this action properly defined in Redux
+// import { addItem } from './redux/actions'; // Ensure you have this action properly defined in Redux
 import './ProductList.css';
 import CartItem from './CartItem';
 
@@ -333,7 +333,7 @@ function ProductList() {
                           className="product-button"
                           onClick={() => handleAddToCart(plant)}
                         >
-                          {addedToCart[plant.name] ? 'Added' : 'Add to Cart'}
+                          Add to Cart
                         </button>
                       </div>
                     ))}
